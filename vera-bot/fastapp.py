@@ -29,10 +29,10 @@ def healthz():
 @app.get("/v1/metadata")
 def metadata():
     return {
-        "my_name" : "BHARTI",
-        "model" : "google/gemini-2.5-flash",
-        "deterministic" : True,
-        "versions" : "1.0.0",
+        "team_name": "BHARTI",
+        "model": "google/gemini-2.5-flash",
+        "deterministic": True,
+        "versions": "1.0.0",
     }
 # now the thing is the incoming context need to be saved
 @app.post("/v1/context")
